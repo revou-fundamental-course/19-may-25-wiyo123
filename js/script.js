@@ -1,4 +1,4 @@
- function convert() {
+        function convert() {
             const celsiusInput = document.getElementById('celsius');
             const fahrenheitInput = document.getElementById('fahrenheit');
             const calculationText = document.getElementById('calculation-text');
@@ -7,9 +7,11 @@
                 alert('Masukkan suhu dalam Celsius terlebih dahulu');
                 return;
             }
+
             
             const celsius = parseFloat(celsiusInput.value);
             const fahrenheit = (celsius * 9/5) + 32;
+            console.log(`Nilai Celcius saya: ${celsius} dan farenheit ${fahrenheit}`)
             
             fahrenheitInput.value = fahrenheit.toFixed(2);
             
